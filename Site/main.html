@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ЭДС</title>
+    
+    <link rel="stylesheet" href="styles/main.css"/>
+
+    <link rel="shortcut icon" href="images/icon.png" type="png">
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="section__tabs tabs">
+          <div class="tabs__head">
+            <div class="tabs__caption" data-tab="home">Главная</div>
+            <div class="tabs__caption" data-tab="tasks">Содержание</div>
+            <div class="tabs__caption" data-tab="about">О нас</div>
+            <div class="tabs__caption" data-tab="registration">Регистрация</div>
+            <div class="tabs__caption" data-tab="notes">Заметки</div>
+            <div class="tabs__caption" data-tab="test">тесты</div>
+            <div class="tabs__caption" data-tab="schemes">Схемы</div>
+            <div class="tabs__caption" data-tab="videos">Видео</div>
+            <div class="tabs__caption" data-tab="animation">Анимация</div>
+            <div class="tabs__caption" data-tab="model">Модель</div>
+          </div>
+
+          <div class="tabs__body">
+
+            <!--Главная вкладка-->
+            <div class="tabs__content" data-tab="home">
+              <p><big>Данная страница посвещена Лабораторным работам по физике, а именно источникам ЭДС.</big>
+              <br>Вы возможно задались вопросом, что же такое ЭДС?
+              <br>Электродвижущая сила (ЭДС) — скалярная физическая величина, характеризующая работу сторонних сил (то есть любых сил, кроме электростатических и диссипативных), действующих в квазистационарных цепях постоянного или переменного тока. В замкнутом проводящем контуре ЭДС равна работе этих сил по перемещению единичного положительного заряда вдоль всего контура
+              <br>
+              <br><img src="images/kotik.jpg">
+            </div>
+
+            <!--Задачи-->
+            <div class="tabs__content" data-tab="tasks">
+              На данной странице находится содержание сайта:<br>
+                 1. Главная<br>
+                 2. Содержание<br>
+                 3. Страница с данными автора данного сайта<br>
+                 4. Регистрация и форма обратной связи.<br>
+                 5. Страница для заметок<br>
+                 6. Тест<br>
+                 7. схемы подключения<br>
+                 8. Видеоуроки<br>
+                 9. Анимация<br>
+                 10. Модель<br>
+            </div>
+
+            <!--Об авторе-->
+            <div class="tabs__content" data-tab="about">
+              <br><img src="images/autor.jpg" width="100" height="120">
+              <br>Автор : Хазиахметов Дамир ильмирович 
+              <br>Группа : 0216
+              <br>Электронный адрес : fersercer@gmail.com 
+              <br>
+            </div>
+
+            <!--Регистрация-->
+            <div class="tabs__content" data-tab="registration">
+            <table>
+              <tr><td><label>Регистрация</label></td><td><label>Вход</label></td></tr>
+              <tr> <td><input type="text" id="username" placeholder="Введите имя"/></td> <td><input type="text" id="username2" placeholder="Введите имя" /></td> </tr>
+              <tr> <td><input type="password" id="password" placeholder="Введите пароль" /></td> <td><input type="password" id="password2" placeholder="Введите пароль" /></td> </tr>
+              <tr> <td><input type="button" value="Регистрация" onclick="DATA()" /></td> <td><input type="button" value="Вход" onclick="DATA2()" /></td> </tr>
+          </table>
+          <form action="mailto:you@yourdmainhere.com" method="post"
+          enctype="text/plain">
+        <table style="margin-top: 100px;">
+            <tr><td>Your name:<input type="text" name="FirstName"></td><td>Email for feedback:<input type="text" name="Email"></td></tr>
+            <tr><td><input type="submit" name="Submit" value="Send"></td></tr>
+        </table>
+    </form>
+          </div>
+            
+            <!--Заметки-->
+            <div class="tabs__content" data-tab="notes">
+              <div class="notes">
+                <h2>Заметки</h2>
+                <div id="editor" contenteditable="true"
+                style="height: 50%; width: 100%; border: solid; border-width: 1px; text-align: left">
+              </div>
+            </div>
+            </div>
+
+            <!--Тесты-->
+            <div class="tabs__content" data-tab="test">
+              <article class="test">
+                <ul>
+                
+                    <li>В опыте по исследованию ЭДС электромагнитной индукции квадратная рамка из тонкого провода со стороной квадрата b находится в однородном магнитном поле, перпендикулярном плоскости рамки. Индукция поля возрастает за время t по линейному закону от 0 до максимального значения B_max. Как изменится ЭДС индукции, возникающая в рамке, если b уменьшить в 2 раза, а B_max увеличить в 4 раза?
+                        <ul>
+                            <li><label><input type="radio" name="q1"> увеличится в 2 раза</label></li>
+                            <li><label><input type="radio" name="q1">увеличится в 4 раза</label></li>
+                            <li class="right"><label><input type="radio" name="q1">не изменится</label></li>
+                            <li><label><input type="radio" name="q1">уменьшится в 2 раза</label></li>
+                            <li><label><input type="radio" name="q1">уменьшится в 4 раза</label></li>                       
+                        </ul>
+                    </li>
+                    
+                    <li>Во сколько раз надо уменьшить индуктивность катушки, чтобы при неизменном значении силы тока в ней энергия магнитного поля катушки уменьшилась в 4 раза?
+                        <ul>
+                            <li><label><input type="radio" name="q2"> в 2 раза</label></li>
+                            <li class="right"><label><input type="radio" name="q2"> в 4 раза</label></li>
+                            <li><label><input type="radio" name="q2"> в 8 раз</label></li>
+                            <li><label><input type="radio" name="q2"> в 16 раз</label></li>
+                                              
+                        </ul>
+                    </li>
+                    
+                    <li>Третий вопрос
+                        <ul>
+                            <li><label><input type="radio" name="q3">Неверный ответ</label></li>
+                            <li class="right"><label><input type="radio" name="q3">Верный ответ</label></li>
+                            <li><label><input type="radio" name="q3">Неверный ответ</label></li>
+                            <li><label><input type="radio" name="q3">Неверный ответ</label></li>
+                            <li><label><input type="radio" name="q3">Неверный ответ</label></li>                       
+                        </ul>
+                    </li>
+                    
+                    <li><img src="images/zad1.jpg">
+                      <ul>
+                          <li><label><input type="checkbox" name="q4">1</label></li>
+                          <li><label><input type="checkbox" name="q4">2</label></li>
+                          <li class="right"><input type="checkbox" name="q4">3</label></li>
+                          <li><label><input type="checkbox" name="q4">4</label></li>
+                          <li class="right"><input type="checkbox" name="q4">5</label></li>                       
+                      </ul>
+                  </li>
+
+                  <li><img src="images/zad2.jpg">
+                    <ul>
+                        <li><label><input type="checkbox" name="q5">1</label></li>
+                        <li class="right"><label><input type="checkbox" name="q5">2</label></li>
+                        <li class="right"><label><input type="checkbox" name="q5">3</label></li>
+                        <li><label><input type="checkbox" name="q5">4</label></li>
+                        <li><label><input type="checkbox" name="q5">5</label></li>                       
+                    </ul>
+                </li>
+
+                </ul>
+            </article>
+            
+            <input type="button" value="Посчитать" onclick="testCount( )">
+            </div>
+
+            <!--Схемы подключения-->
+            <div class="tabs__content" data-tab="schemes">
+              <big>Последовательное соединение 
+              <br><img src="images/posledSoed.jpg">
+              <br><big>Параллельное соединение
+              <br><img src="images/parr.jpg"> 
+            </div>
+
+            <!--Видео-->
+            <div class="tabs__content" data-tab="videos">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/jK8bkhIqQtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/dHiaHdmzd4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </div>
+
+            <!--Анимация-->
+            <div class="tabs__content" data-tab="animation">
+              
+              <input type="submit" id="show" value="Показать анимации" onclick="ANI()">
+              <input type="submit" id="hide" value="спрятать анимацию" onclick="ANI2()">
+              <input type="submit" id="start" value="Запуск анимации" onclick="ANI3()"><br>
+              <input type="number" id="resist" placeholder="Введите сопротивление реостата" style="margin-left: -20px; margin-top: -100;"><br>
+              <input type="number" id="Eds" placeholder="U аккумулятора" style="margin-left: -20px; margin-top: -100;"><br>
+              <div class="vrisist" id="vrisist" style="border:3px #000000  solid; width:175px; margin-left: -20px; margin-top: 10px;"></div>
+              
+              <div class="voltm" id="voltm" style="margin-left: 400px; margin-top: 10px; border:3px #000000  solid; width:175px;"></div>
+              <img src="images/voltm.png"  width="120" height="120" id="voltm_img" style="z-index:1;position: relative;margin-left: 400px; margin-top: 10px;">
+              
+              <div class="amperm" id="amperm" style="margin-left: 100px; margin-top: 10px; border:3px #000000  solid; width:175px;"></div>
+              <img src="images/amperm.png"  width="120" height="120" id="amperm_img" style="margin-left: 100px; margin-top: 10px;"><br>
+              
+              <img src="images/reostat_1.png"  width="300" height="300" id="reostat" style="z-index:1;margin-top:140px;margin-left:265px">
+              <img src="images/reostat_2.png" style="z-index:1;position: relative;top:-140px;left:-265px" width="50" height="60" id="reost">
+              
+               
+              <img src="images/kluch_on.png" style="z-index:1;position: relative;top:-300px;left:100px" width="100" height="100" id="cluch_img">
+               
+              <img src="images/bat.png" style="z-index:1;position: relative;top:-300px;left:-300px" width="120" height="150" id="bat">
+              
+              
+              <img src="images/strelka1.png" style="z-index:2;position: relative;top:-320px;left:-600px" width="120" height="470" id="pr1"><br>
+              <img src="images/strelka1.png" style="z-index:2;position: relative;top:-875px;left:500px" width="120" height="470" id="pr2">
+              <img src="images/strelka1.png" style="transform:rotate(90deg);position: relative;top:-650px;left:345px" width="130" height="550" id="pr3">
+              <img src="images/strelka1.png" style="transform:rotate(90deg);position: relative;top:-1150px;left:120px" width="120" height="305" id="pr4">
+              <img src="images/strelka1.png" style="z-index:2;position: relative;top:-675px;left:350px" width="120" height="200" id="pr5">
+              <img src="images/strelka1.png" style="transform:rotate(90deg);position: relative;top:-550px;left:100px" width="120" height="305" id="pr6">
+              <img src="images/strelka1.png" style="transform:rotate(90deg);position: relative;top:-600px;left:-500px" width="120" height="205" id="pr7">
+              <img src="images/strelka1.png" style="transform:rotate(90deg);position: relative;top:-1000px;left:-555px" width="120" height="125" id="pr8">
+              <img src="images/strelka1.png" style="z-index:2;position: relative;top:-665px;left:-830px" width="120" height="400" id="pr9">
+            
+              
+            </div>
+        
+            <!--Модель-->
+            <div class="tabs__content" data-tab="model">
+            
+              <input type="submit" id="startmod" value="Запуск анимации" onclick="MOD3()"><br>
+              <input type="number" id="Edsmod" placeholder="U аккумулятора" style="margin-left: -20px; margin-top: -100;"><br>
+              
+              <img src="images/bat.png" style="z-index:1;position: relative;top:500px;left:400px" width="120" height="150" id="batmod">
+
+              <div class="voltmmod" id="voltmmod" style="margin-left: 400px; margin-top: 10px; border:3px #000000  solid; width:175px;"></div>
+              <img src="images/voltm.png"  width="120" height="120" id="voltmmod_img" style="z-index:1;position: relative;margin-left: 400px; margin-top: 10px;">
+              
+              <div class="ampermmod" id="ampermmod" style="margin-left: 100px; margin-top: 10px; border:3px #000000  solid; width:175px;"></div>
+              <img src="images/amperm.png"  width="120" height="120" id="ampermmod_img" style="margin-left: 100px; margin-top: 10px;"><br>
+              
+              <img src="images/reostat_1.png"  width="300" height="300" id="reostatmod" style="z-index:1;margin-top:140px;margin-left:265px">
+              
+              <img src="images/kluch_off.png" style="z-index:1;position: relative;top:-300px;left:150px" width="100" height="100" id="cluchmod_img" onclick="cluch(this.id)">
+              <div id="slider" class="slider" style=" margin-left: 290px; margin-top: -220px;">
+                <div class="thumb"></div>
+              </div>
+              <div class="resmodmod" id="resmod" style="margin-left: 320px; margin-top: -50px; border:3px #000000  solid; width:175px;"></div>
+              <img src="images/bat.png" style="z-index:1;position: relative;top:-300px;left:-300px" width="120" height="150" id="batmod">
+              
+              <div class="provoda" id="provoda">
+              <img src="images/strelka1.png" style="z-index:1;position: relative;top:-320px;left:-600px" width="120" height="470" id="pr1"><br>
+              <img src="images/strelka1.png" style="z-index:1;position: relative;top:-875px;left:500px" width="120" height="470" id="pr2">
+              <img src="images/strelka1.png" style="transform:rotate(90deg);position: relative;top:-650px;left:345px" width="130" height="550" id="pr3">
+              <img src="images/strelka1.png" style="transform:rotate(90deg);position: relative;top:-1150px;left:120px" width="120" height="305" id="pr4">
+              <img src="images/strelka1.png" style="z-index:1;position: relative;top:-675px;left:350px" width="120" height="200" id="pr5">
+              <img src="images/strelka1.png" style="transform:rotate(90deg);position: relative;top:-550px;left:100px" width="120" height="305" id="pr6">
+              <img src="images/strelka1.png" style="transform:rotate(90deg);position: relative;top:-600px;left:-500px" width="120" height="205" id="pr7">
+              <img src="images/strelka1.png" style="transform:rotate(90deg);position: relative;top:-1000px;left:-560px" width="120" height="125" id="pr8">
+              <img src="images/strelka1.png" style="z-index:1;position: relative;top:-665px;left:-830px" width="120" height="400" id="pr9">
+              </div>
+              <img src="images/strelka1.png" style="z-index:1;position: relative;top:-1350px;left:250px" width="120" height="490" id="pr9"><br>
+              <div class="results" id="results">
+                ЭДС
+                <div class="Edds" id="Edds" style="border:3px #000000  solid; width:175px; margin-left: 0px; margin-top: 10px;"></div>
+                
+                Внутреннее сопротивление
+                <div class="vrisistmod" id="vrisistmod" style="border:3px #000000  solid; width:175px; margin-left: 0px; margin-top: 10px;"></div>
+                Абсолютная инструментальная погрешность вольтметра
+                <div class="deliU" id="deliU" style="border:3px #000000  solid; width:175px; margin-left: 0px; margin-top: 10px;"></div>
+                Абсолютная погрешность отсчета вольтметра
+                <div class="deloU" id="deloU" style="border:3px #000000  solid; width:175px; margin-left: 0px; margin-top: 10px;"></div>
+                Максимальная абсолютная погрешность вольтетра
+                <div class="delU" id="delU" style="border:3px #000000  solid; width:175px; margin-left: 0px; margin-top: 10px;"></div>
+                
+                Eu
+                <div class="Eu" id="Eu" style="border:3px #000000  solid; width:175px; margin-left: 0px; margin-top: 10px;"></div>
+                
+                Ee
+                <div class="Ee" id="Ee" style="border:3px #000000  solid; width:175px; margin-left: 0px; margin-top: 10px;"></div>
+                
+              </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/test.js"></script>
+    <script src="scripts/reg.js"></script>
+    <script src="scripts/animatoin.js"></script>
+    <script src="scripts/model.js"></script>
+  </body>
+</html>
